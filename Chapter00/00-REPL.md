@@ -17,8 +17,7 @@ Idris REPL is similar to those of Scala and Haskell, with some important differe
 
 ### Cons:
 
-- There seems to be no way to define data types at the REPL.
-- Multi-line code (like with `:{`-`:}` in Haskell REPL, and `:paste` in Scala REPL) does not seem to be supported.
+- Multi-line code (like with `:{`-`:}` in Haskell REPL, and `:paste` in Scala REPL) does not seem to be supported. This makes defining data types, for instance, messy.
 - The REPL feels quite buggy in general. Some examples:
 
 ```idris
