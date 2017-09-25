@@ -30,3 +30,12 @@ When checking argument a to function Prelude.Basics.id:
 A value has a type, but it itself is NOT a type. A type has a type, but it is also a type.
 
 I had a wee epiphany with regards to this today: In Scala, we have singleton types. So `4.type` is a valid type, and has only one value: 4 (duh). You can keep refining types, narrowing them down to smaller and smaller spaces, until you get singleton types. So in some sense, any value also corresponds to (or maybe, even "is"?) a singleton type. This is kind of what protocols do to classes in the OO world too. You don't have the strange "object has a class, class has a class" thing in the prototype world.
+
+--
+
+```idris
+Idris> \x => x + 1
+\x => prim__addBigInt x 1 : Integer -> Integer
+```
+
+Not sure why `=>` was chosen instead of `->`. Hmm.
