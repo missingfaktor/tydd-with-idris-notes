@@ -2,6 +2,7 @@ module Average
 
 import Data.Vect
 
+export
 average : (string: String) -> Double
 average string = let numberOfWords = wordCount string
                      totalLength = sum $ allLengths $ words string in
